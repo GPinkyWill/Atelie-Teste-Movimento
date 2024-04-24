@@ -34,7 +34,7 @@ func _move():
 	
 
 func _animate() -> void:
-	if velocity.length() > 5:
+	if velocity.length() > 2:
 		_state_machine.travel("Walk")
 		return
 	_state_machine.travel("Idle")
